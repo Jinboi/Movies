@@ -176,6 +176,8 @@ namespace MvcMovie.Controllers
             return RedirectToAction(nameof(Index));
         }
 
+        //project finished
+
         private bool MovieExists(int id)
         {
             return _context.Movie.Any(e => e.Id == id);
